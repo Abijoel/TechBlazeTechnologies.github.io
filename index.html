@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Blaze Technologies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: #F4F6F9;
+        }
+
+        .primary-bg {
+            background-color: #0A1F44;
+        }
+
+        .accent-color {
+            color: #FF6600;
+        }
+
+        .accent-bg {
+            background-color: #FF6600;
+        }
+
+        .btn-primary {
+            background-color: #FF6600;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #e65c00;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            transition: 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .nav-link:hover {
+            color: #FF6600;
+        }
+    </style>
+</head>
+
+<body class="font-sans text-gray-800">
+
+<!-- HEADER -->
+<header class="bg-white shadow fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-[#0A1F44]">
+            Tech Blaze <span class="accent-color">Technologies</span>
+        </h1>
+
+        <nav class="hidden md:flex space-x-8 font-medium">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="primary-bg text-white pt-32 pb-20">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+            Empowering Businesses Through Smart Technology
+        </h2>
+        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+            We deliver innovative digital, security, and IT infrastructure solutions 
+            that help businesses grow, stay secure, and compete confidently.
+        </p>
+
+        <div class="space-x-4">
+            <a href="#contact" class="btn-primary px-8 py-3 rounded-md font-semibold">
+                Get Started
+            </a>
+            <a href="#services" class="bg-white text-[#0A1F44] px-8 py-3 rounded-md font-semibold">
+                Our Services
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-20">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-[#0A1F44]">Our Services</h2>
+            <div class="w-20 h-1 accent-bg mx-auto mt-3"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="service-card bg-white p-8 rounded-lg shadow">
+                <i class="fas fa-globe text-3xl accent-color mb-4"></i>
+                <h3 class="font-bold text-xl mb-3">Website Development</h3>
+                <p>Professional, responsive, and high-performance websites for businesses and organizations.</p>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-lg shadow">
+                <i class="fas fa-code text-3xl accent-color mb-4"></i>
+                <h3 class="font-bold text-xl mb-3">Software Development</h3>
+                <p>Custom business systems, POS software, and enterprise applications built to improve efficiency.</p>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-lg shadow">
+                <i class="fas fa-video text-3xl accent-color mb-4"></i>
+                <h3 class="font-bold text-xl mb-3">CCTV Installation</h3>
+                <p>Professional HD & IP camera installation with remote monitoring setup and maintenance.</p>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-lg shadow">
+                <i class="fas fa-network-wired text-3xl accent-color mb-4"></i>
+                <h3 class="font-bold text-xl mb-3">Networking Solutions</h3>
+                <p>Secure office and home network setup, router configuration, and structured cabling.</p>
+            </div>
+
+            <div class="service-card bg-white p-8 rounded-lg shadow">
+                <i class="fas fa-tv text-3xl accent-color mb-4"></i>
+                <h3 class="font-bold text-xl mb-3">Digital IPTV Setup</h3>
+                <p>Complete IPTV installation and smart TV configuration for seamless streaming.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center max-w-3xl">
+        <h2 class="text-3xl font-bold text-[#0A1F44] mb-6">About Us</h2>
+        <p class="mb-6">
+            Tech Blaze Technologies is a Lagos-based IT solutions company 
+            dedicated to delivering reliable digital and infrastructure services 
+            to businesses and individuals.
+        </p>
+        <p>
+            Our mission is to provide secure, scalable, and cost-effective 
+            technology solutions that enhance productivity and drive growth.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold text-[#0A1F44] mb-6">Get In Touch</h2>
+
+        <div class="space-y-4 text-lg">
+            <p><i class="fas fa-map-marker-alt accent-color"></i> Lekki Phase 1, Lagos, Nigeria</p>
+            <p><i class="fas fa-phone accent-color"></i> 09023324007</p>
+            <p><i class="fas fa-envelope accent-color"></i> middleson74@gmail.com</p>
+        </div>
+
+        <a href="https://wa.me/2349023324007" 
+           class="inline-block mt-8 btn-primary px-8 py-3 rounded-md font-semibold">
+            Chat on WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="primary-bg text-white py-6 text-center">
+    <p>
+        © 2026 Tech Blaze Technologies. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
